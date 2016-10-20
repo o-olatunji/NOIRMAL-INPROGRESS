@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB2D9501DB96CC80062F428 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D94F1DB96CC80062F428 /* HomeTabBarController.swift */; };
+		BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D97E1DB977200062F428 /* HomeCategories .swift */; };
+		BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */; };
+		BFB2D9831DB97E2F0062F428 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */; };
 		BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB887A11DA8656800F50276 /* AppDelegate.swift */; };
 		BFB887A41DA8656800F50276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB887A31DA8656800F50276 /* ViewController.swift */; };
 		BFB887A71DA8656800F50276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB887A51DA8656800F50276 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFB2D94F1DB96CC80062F428 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTabBarController.swift; path = ../HomeTabBarController.swift; sourceTree = "<group>"; };
+		BFB2D97E1DB977200062F428 /* HomeCategories .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeCategories .swift"; sourceTree = "<group>"; };
+		BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BFB8879E1DA8656800F50276 /* Noirmal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noirmal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB887A11DA8656800F50276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB887A31DA8656800F50276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFB2D97D1DB977040062F428 /* Home Page Files  */ = {
+			isa = PBXGroup;
+			children = (
+				BFB2D94F1DB96CC80062F428 /* HomeTabBarController.swift */,
+				BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */,
+				BFB2D97E1DB977200062F428 /* HomeCategories .swift */,
+			);
+			name = "Home Page Files ";
+			sourceTree = "<group>";
+		};
 		BFB887951DA8656800F50276 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +74,9 @@
 			children = (
 				BFB887A11DA8656800F50276 /* AppDelegate.swift */,
 				BFB887A31DA8656800F50276 /* ViewController.swift */,
+				BFB2D97D1DB977040062F428 /* Home Page Files  */,
 				BFB887A51DA8656800F50276 /* Main.storyboard */,
+				BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */,
 				BFB887A81DA8656800F50276 /* Assets.xcassets */,
 				BFB887AA1DA8656800F50276 /* LaunchScreen.storyboard */,
 				BFB887AD1DA8656800F50276 /* Info.plist */,
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB2D9831DB97E2F0062F428 /* LoginViewController.swift in Sources */,
 				BFB887A41DA8656800F50276 /* ViewController.swift in Sources */,
+				BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */,
 				BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */,
+				BFB2D9501DB96CC80062F428 /* HomeTabBarController.swift in Sources */,
+				BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +326,7 @@
 				BFB887B21DA8656800F50276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
