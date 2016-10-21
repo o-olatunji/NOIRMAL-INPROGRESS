@@ -14,12 +14,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     let picker = UIImagePickerController()
     
     let profile: [ProfileSettings] = [
-
-    ProfileSettings(name: "Your Reviews"),
-    ProfileSettings(name: "WishList"),
-    ProfileSettings(name: "Purchase History"),
-    ProfileSettings(name: "Payment Information")
-    
+        
+        ProfileSettings(name: "Your Reviews"),
+        ProfileSettings(name: "WishList"),
+        ProfileSettings(name: "Purchase History"),
+        ProfileSettings(name: "Payment Information")
+        
     ]
     
     // import existing photo when button is tapped
@@ -38,24 +38,25 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         
         picker.delegate = self
+        
     }
     
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : AnyObject])
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
     {
         var  chosenImage = UIImage()
         chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         profilePicture.contentMode = .scaleAspectFill
         profilePicture.image = chosenImage
         dismiss(animated:true, completion: nil)
+        
     }
+    
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
+    
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
