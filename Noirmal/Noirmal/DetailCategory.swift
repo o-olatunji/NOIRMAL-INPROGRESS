@@ -11,10 +11,12 @@ import UIKit
 class Detail {
     
     var image: UIImage
+    var label: String
     
-    init(image: UIImage) {
+    init(image: UIImage, label: String) {
         
         self.image = image
+        self.label = label
     }
     
 }

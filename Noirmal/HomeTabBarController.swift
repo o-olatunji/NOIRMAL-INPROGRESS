@@ -15,16 +15,16 @@ class HomeTabBarController: UITableViewController {
         Categories(name: "Make Up" ),
         Categories(name: "Skin Care"),
         Categories(name: "Clothing"),
-        Categories(name: "Hoisery"),
-        Categories(name: "Intimate"),
-        Categories(name: "Other Products")
+        Categories(name: "Intimate Apparel"),
+        Categories(name: "Nude"),
+        Categories(name: "Tutorials")
         
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewWillAppear(_ animated: Bool) {

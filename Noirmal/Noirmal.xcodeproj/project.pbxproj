@@ -22,9 +22,9 @@
 		BFF81B791DB9919A006D01BC /* ProfilePicCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */; };
 		BFF81B7B1DB9A722006D01BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */; };
 		BFF81B7D1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7C1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift */; };
-		BFF81B7F1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7E1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift */; };
 		BFF81B821DB9B84E006D01BC /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */; };
 		BFF81B841DB9B930006D01BC /* DetailCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B831DB9B930006D01BC /* DetailCategory.swift */; };
+		BFF81B861DB9BA74006D01BC /* DetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B851DB9BA74006D01BC /* DetailCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,9 @@
 		BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePicCircle.swift; sourceTree = "<group>"; };
 		BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFF81B7C1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FirstLoginScreenViewController .swift"; path = "../FirstLoginScreenViewController .swift"; sourceTree = "<group>"; };
-		BFF81B7E1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategoriesCollectionView.swift; sourceTree = "<group>"; };
 		BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFF81B831DB9B930006D01BC /* DetailCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategory.swift; sourceTree = "<group>"; };
+		BFF81B851DB9BA74006D01BC /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +114,11 @@
 				BFB887A11DA8656800F50276 /* AppDelegate.swift */,
 				BFB887A31DA8656800F50276 /* ViewController.swift */,
 				BFB2D97D1DB977040062F428 /* Home Page Files  */,
-				BFB887A51DA8656800F50276 /* Main.storyboard */,
+				BFF81B871DBA79A3006D01BC /* StoryBoards */,
 				BFF81B801DB9B7E3006D01BC /* Detailed Category Files */,
 				BFB2D9891DB982B60062F428 /* Profile Page Files */,
 				BFB2D9841DB97F2E0062F428 /* LoginPages */,
 				BFB887A81DA8656800F50276 /* Assets.xcassets */,
-				BFB887AA1DA8656800F50276 /* LaunchScreen.storyboard */,
 				BFB887AD1DA8656800F50276 /* Info.plist */,
 			);
 			path = Noirmal;
@@ -128,11 +127,20 @@
 		BFF81B801DB9B7E3006D01BC /* Detailed Category Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFF81B7E1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift */,
+				BFF81B851DB9BA74006D01BC /* DetailCollectionViewController.swift */,
 				BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */,
 				BFF81B831DB9B930006D01BC /* DetailCategory.swift */,
 			);
 			name = "Detailed Category Files";
+			sourceTree = "<group>";
+		};
+		BFF81B871DBA79A3006D01BC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BFB887AA1DA8656800F50276 /* LaunchScreen.storyboard */,
+				BFB887A51DA8656800F50276 /* Main.storyboard */,
+			);
+			name = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +219,10 @@
 				BFF81B7B1DB9A722006D01BC /* SignUpViewController.swift in Sources */,
 				BFF81B771DB98DFD006D01BC /* ProfileCells.swift in Sources */,
 				BFB2D9831DB97E2F0062F428 /* LoginViewController.swift in Sources */,
-				BFF81B7F1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift in Sources */,
 				BFB887A41DA8656800F50276 /* ViewController.swift in Sources */,
 				BFB2D98B1DB989B10062F428 /* ProfileSettings.swift in Sources */,
 				BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */,
+				BFF81B861DB9BA74006D01BC /* DetailCollectionViewController.swift in Sources */,
 				BFF81B821DB9B84E006D01BC /* DetailCollectionViewCell.swift in Sources */,
 				BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */,
 				BFF81B791DB9919A006D01BC /* ProfilePicCircle.swift in Sources */,
