@@ -11,11 +11,20 @@
 		BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D97E1DB977200062F428 /* HomeCategories .swift */; };
 		BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */; };
 		BFB2D9831DB97E2F0062F428 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */; };
+		BFB2D9881DB982AF0062F428 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D9871DB982AF0062F428 /* ProfileViewController.swift */; };
+		BFB2D98B1DB989B10062F428 /* ProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D98A1DB989B10062F428 /* ProfileSettings.swift */; };
 		BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB887A11DA8656800F50276 /* AppDelegate.swift */; };
 		BFB887A41DA8656800F50276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB887A31DA8656800F50276 /* ViewController.swift */; };
 		BFB887A71DA8656800F50276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB887A51DA8656800F50276 /* Main.storyboard */; };
 		BFB887A91DA8656800F50276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB887A81DA8656800F50276 /* Assets.xcassets */; };
 		BFB887AC1DA8656800F50276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB887AA1DA8656800F50276 /* LaunchScreen.storyboard */; };
+		BFF81B771DB98DFD006D01BC /* ProfileCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B761DB98DFD006D01BC /* ProfileCells.swift */; };
+		BFF81B791DB9919A006D01BC /* ProfilePicCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */; };
+		BFF81B7B1DB9A722006D01BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */; };
+		BFF81B7D1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7C1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift */; };
+		BFF81B7F1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7E1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift */; };
+		BFF81B821DB9B84E006D01BC /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */; };
+		BFF81B841DB9B930006D01BC /* DetailCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B831DB9B930006D01BC /* DetailCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,8 @@
 		BFB2D97E1DB977200062F428 /* HomeCategories .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeCategories .swift"; sourceTree = "<group>"; };
 		BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BFB2D9871DB982AF0062F428 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BFB2D98A1DB989B10062F428 /* ProfileSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
 		BFB8879E1DA8656800F50276 /* Noirmal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noirmal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB887A11DA8656800F50276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB887A31DA8656800F50276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +41,13 @@
 		BFB887A81DA8656800F50276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB887AB1DA8656800F50276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB887AD1DA8656800F50276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF81B761DB98DFD006D01BC /* ProfileCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCells.swift; sourceTree = "<group>"; };
+		BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePicCircle.swift; sourceTree = "<group>"; };
+		BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BFF81B7C1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FirstLoginScreenViewController .swift"; path = "../FirstLoginScreenViewController .swift"; sourceTree = "<group>"; };
+		BFF81B7E1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategoriesCollectionView.swift; sourceTree = "<group>"; };
+		BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		BFF81B831DB9B930006D01BC /* DetailCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,27 @@
 				BFB2D97E1DB977200062F428 /* HomeCategories .swift */,
 			);
 			name = "Home Page Files ";
+			sourceTree = "<group>";
+		};
+		BFB2D9841DB97F2E0062F428 /* LoginPages */ = {
+			isa = PBXGroup;
+			children = (
+				BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */,
+				BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */,
+				BFF81B7C1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift */,
+			);
+			name = LoginPages;
+			sourceTree = "<group>";
+		};
+		BFB2D9891DB982B60062F428 /* Profile Page Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFB2D9871DB982AF0062F428 /* ProfileViewController.swift */,
+				BFF81B761DB98DFD006D01BC /* ProfileCells.swift */,
+				BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */,
+				BFB2D98A1DB989B10062F428 /* ProfileSettings.swift */,
+			);
+			name = "Profile Page Files";
 			sourceTree = "<group>";
 		};
 		BFB887951DA8656800F50276 = {
@@ -76,12 +115,24 @@
 				BFB887A31DA8656800F50276 /* ViewController.swift */,
 				BFB2D97D1DB977040062F428 /* Home Page Files  */,
 				BFB887A51DA8656800F50276 /* Main.storyboard */,
-				BFB2D9821DB97E2F0062F428 /* LoginViewController.swift */,
+				BFF81B801DB9B7E3006D01BC /* Detailed Category Files */,
+				BFB2D9891DB982B60062F428 /* Profile Page Files */,
+				BFB2D9841DB97F2E0062F428 /* LoginPages */,
 				BFB887A81DA8656800F50276 /* Assets.xcassets */,
 				BFB887AA1DA8656800F50276 /* LaunchScreen.storyboard */,
 				BFB887AD1DA8656800F50276 /* Info.plist */,
 			);
 			path = Noirmal;
+			sourceTree = "<group>";
+		};
+		BFF81B801DB9B7E3006D01BC /* Detailed Category Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF81B7E1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift */,
+				BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */,
+				BFF81B831DB9B930006D01BC /* DetailCategory.swift */,
+			);
+			name = "Detailed Category Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +167,7 @@
 				TargetAttributes = {
 					BFB8879D1DA8656800F50276 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FBDY44749F;
+						DevelopmentTeam = XL382KPW8D;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -157,12 +208,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF81B7B1DB9A722006D01BC /* SignUpViewController.swift in Sources */,
+				BFF81B771DB98DFD006D01BC /* ProfileCells.swift in Sources */,
 				BFB2D9831DB97E2F0062F428 /* LoginViewController.swift in Sources */,
+				BFF81B7F1DB9B7A8006D01BC /* DetailCategoriesCollectionView.swift in Sources */,
 				BFB887A41DA8656800F50276 /* ViewController.swift in Sources */,
+				BFB2D98B1DB989B10062F428 /* ProfileSettings.swift in Sources */,
 				BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */,
+				BFF81B821DB9B84E006D01BC /* DetailCollectionViewCell.swift in Sources */,
 				BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */,
+				BFF81B791DB9919A006D01BC /* ProfilePicCircle.swift in Sources */,
+				BFF81B7D1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift in Sources */,
+				BFB2D9881DB982AF0062F428 /* ProfileViewController.swift in Sources */,
 				BFB2D9501DB96CC80062F428 /* HomeTabBarController.swift in Sources */,
 				BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */,
+				BFF81B841DB9B930006D01BC /* DetailCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +345,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FBDY44749F;
+				DEVELOPMENT_TEAM = XL382KPW8D;
 				INFOPLIST_FILE = Noirmal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GA.Noirmal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,8 +359,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FBDY44749F;
+				DEVELOPMENT_TEAM = XL382KPW8D;
 				INFOPLIST_FILE = Noirmal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GA.Noirmal;
 				PRODUCT_NAME = "$(TARGET_NAME)";

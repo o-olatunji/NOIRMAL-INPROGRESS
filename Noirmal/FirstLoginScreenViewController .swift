@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  FirstLoginScreenViewController .swift
 //  Noirmal
 //
 //  Created by Olamide Olatunji on 10/20/16.
@@ -8,15 +8,18 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class FirstVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        self.navigationController?.isToolbarHidden = true
+        self.navigationController?.isToolbarHidden = true 
     }
+    
     
 }
