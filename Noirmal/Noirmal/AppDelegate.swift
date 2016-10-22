@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "com.noirmal.myapp"
+            $0.server = "https://noirmal.herokuapp.com/parse"
+            print("It Connected")
+        }
+        Parse.initialize(with: configuration)
+        
+        
+        
+        
+        
         // Override point for customization after application launch.
         return true
     }

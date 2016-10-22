@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0D6392C77D47A953844CE3 /* Pods_Noirmal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0FE2DBCF7C5C768B06A8 /* Pods_Noirmal.framework */; };
 		BFB2D9501DB96CC80062F428 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D94F1DB96CC80062F428 /* HomeTabBarController.swift */; };
 		BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D97E1DB977200062F428 /* HomeCategories .swift */; };
 		BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C90B97CCCFE78327613BDD6 /* Pods-Noirmal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noirmal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Noirmal/Pods-Noirmal.release.xcconfig"; sourceTree = "<group>"; };
+		A1BCA034D11D52D9F1F7155E /* Pods-Noirmal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noirmal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Noirmal/Pods-Noirmal.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB2D94F1DB96CC80062F428 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTabBarController.swift; path = ../HomeTabBarController.swift; sourceTree = "<group>"; };
 		BFB2D97E1DB977200062F428 /* HomeCategories .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeCategories .swift"; sourceTree = "<group>"; };
 		BFB2D9801DB978530062F428 /* HomeCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		BFF81B811DB9B84E006D01BC /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFF81B831DB9B930006D01BC /* DetailCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategory.swift; sourceTree = "<group>"; };
 		BFF81B851DB9BA74006D01BC /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
+		EC4F0FE2DBCF7C5C768B06A8 /* Pods_Noirmal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noirmal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0D6392C77D47A953844CE3 /* Pods_Noirmal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BF3578DA4BB32BE8A2FA9F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1BCA034D11D52D9F1F7155E /* Pods-Noirmal.debug.xcconfig */,
+				4C90B97CCCFE78327613BDD6 /* Pods-Noirmal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B743A0B6303E98373F6C7D59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4F0FE2DBCF7C5C768B06A8 /* Pods_Noirmal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFB2D97D1DB977040062F428 /* Home Page Files  */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +119,8 @@
 			children = (
 				BFB887A01DA8656800F50276 /* Noirmal */,
 				BFB8879F1DA8656800F50276 /* Products */,
+				9BF3578DA4BB32BE8A2FA9F0 /* Pods */,
+				B743A0B6303E98373F6C7D59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFB887B01DA8656800F50276 /* Build configuration list for PBXNativeTarget "Noirmal" */;
 			buildPhases = (
+				8FFEA4DF5184013BCC820649 /* [CP] Check Pods Manifest.lock */,
 				BFB8879A1DA8656800F50276 /* Sources */,
 				BFB8879B1DA8656800F50276 /* Frameworks */,
 				BFB8879C1DA8656800F50276 /* Resources */,
+				C5803B7DD597620668168762 /* [CP] Embed Pods Frameworks */,
+				6A20E9EE9D4CFDF72E7D08A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +237,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A20E9EE9D4CFDF72E7D08A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Noirmal/Pods-Noirmal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FFEA4DF5184013BCC820649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5803B7DD597620668168762 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Noirmal/Pods-Noirmal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFB8879A1DA8656800F50276 /* Sources */ = {
@@ -351,6 +426,7 @@
 		};
 		BFB887B11DA8656800F50276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BCA034D11D52D9F1F7155E /* Pods-Noirmal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XL382KPW8D;
@@ -365,6 +441,7 @@
 		};
 		BFB887B21DA8656800F50276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C90B97CCCFE78327613BDD6 /* Pods-Noirmal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XL382KPW8D;
