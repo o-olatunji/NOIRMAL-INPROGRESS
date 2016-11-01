@@ -27,6 +27,29 @@ class DetailCollectionViewController: UICollectionViewController {
         Detail(image: #imageLiteral(resourceName: "tutorial "), label: "TUTORIALS")
     ]
     
+    let eyes: [Product] = [
+    
+    ]
+    
+    let lips: [Product] = [
+        
+    ]
+    
+    let face: [Product] = [
+        
+    ]
+    
+    let cheeks: [Product] = [
+        
+    ]
+    
+    let tools: [Product] = [
+        
+    ]
+    
+    let tutorials: [Product] = [
+        
+    ]
     
    override func numberOfSections(in collectionView: UICollectionView) -> Int {
     
@@ -50,4 +73,27 @@ class DetailCollectionViewController: UICollectionViewController {
         return cell
         
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+            
+        case 0:
+            
+        case 1:
+            
+        case 2:
+            
+        case 3:
+            
+        case 4:
+            
+        case 5:
+            
+        case 6:
+            
+        }
+        
+    }
+    
 }
