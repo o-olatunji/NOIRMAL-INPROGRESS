@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="-188" y="329"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="66X-jE-j1r">
             <objects>
-                <viewController id="Zht-Em-9ru" sceneMemberID="viewController">
+                <viewController id="Zht-Em-9ru" customClass="LoginViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yAQ-Ro-L85"/>
                         <viewControllerLayoutGuide type="bottom" id="jcO-S7-IBO"/>
@@ -81,8 +81,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage1" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-1j-kdC">
-                                <frame key="frameInset" width="375" height="736"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage1" translatesAutoresizingMaskIntoConstraints="NO" id="OkH-P1-Cqm">
+                                <frame key="frameInset" minY="64" width="414" height="628"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-n8-0CK">
@@ -136,7 +136,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvV-iL-JBt">
-                                        <frame key="frameInset" minX="129" minY="526" width="148" height="54"/>
+                                        <frame key="frameInset" minX="62" minY="450" width="106" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.82352941180000006" green="0.64705882349999999" blue="0.42745098040000001" alpha="0.87132812500000001" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -148,7 +148,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.61568627450000002" green="0.33333333329999998" blue="0.01176470588" alpha="0.87101908800000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.43921568630000002" blue="0.015686274510000001" alpha="0.36865580669999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydM-g0-Vl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330" y="105"/>
+            <point key="canvasLocation" x="1328.985507246377" y="104.34782608695653"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ws1-4k-USg">
@@ -267,7 +267,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.61568627450000002" green="0.33333333329999998" blue="0.01176470588" alpha="0.87101908800000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.43921568630000002" blue="0.015686274510000001" alpha="0.36865580669999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -297,22 +297,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-OO-4Di">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-OO-4Di">
                                 <frame key="frameInset" minY="352" width="414" height="384"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="settings" rowHeight="90" id="HAq-xp-343" customClass="ProfileSettingsCell" customModule="Noirmal" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="414" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="settings" rowHeight="116" id="HAq-xp-343" customClass="ProfileSettingsCell" customModule="Noirmal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HAq-xp-343" id="0V2-cQ-J0O">
-                                            <frame key="frameInset" width="381" height="89.666666666666671"/>
+                                            <frame key="frameInset" width="381" height="115.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings Category " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF6-ES-Byl">
-                                                    <frame key="frameInset" minX="25" minY="19" width="195" height="34"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings Category " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF6-ES-Byl">
+                                                    <frame key="frameInset" minX="93" minY="40" width="221" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -330,7 +330,7 @@
                                     <outlet property="delegate" destination="0ce-aF-Jit" id="lkr-kn-Zdt"/>
                                 </connections>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilepic" translatesAutoresizingMaskIntoConstraints="NO" id="plr-oE-Xa2" customClass="CircleImageView" customModule="Noirmal" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="plr-oE-Xa2" customClass="CircleImageView" customModule="Noirmal" customModuleProvider="target">
                                 <frame key="frameInset" minX="117" minY="64" width="180" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -350,19 +350,19 @@
                                     <action selector="profilePictureButtonTapped:" destination="0ce-aF-Jit" eventType="touchUpInside" id="utt-K0-HwB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Hello /(user)&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-dQ-UWt">
-                                <frame key="frameInset" minX="117" minY="258" width="178" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Because your hue is normal " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-dQ-UWt">
+                                <frame key="frameInset" minX="78" minY="250" width="258" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logout " translatesAutoresizingMaskIntoConstraints="NO" id="ndG-uM-2Sp">
-                                <frame key="frameInset" minX="192" minY="307" width="30" height="20"/>
+                                <frame key="frameInset" minX="364" minY="310" width="30" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-90-Pse">
-                                <frame key="frameInset" minX="184" minY="297" width="46" height="47"/>
+                                <frame key="frameInset" minX="356" minY="297" width="46" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
@@ -375,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GO-8m-Tyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4022" y="672"/>
+            <point key="canvasLocation" x="4021.739130434783" y="671.73913043478262"/>
         </scene>
         <!--Tutorials Collection View Controller-->
         <scene sceneID="lcT-2O-xNL">
@@ -759,8 +759,8 @@
         <image name="heart" width="512" height="512"/>
         <image name="homepage1" width="469" height="574"/>
         <image name="lips" width="400" height="400"/>
+        <image name="loginPhoto" width="6000" height="4000"/>
         <image name="logout " width="48" height="48"/>
-        <image name="profilepic" width="254" height="254"/>
         <image name="twitter share " width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -15,10 +15,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     let profile: [ProfileSettings] = [
         
-        ProfileSettings(name: "Your Reviews"),
-        ProfileSettings(name: "WishList"),
-        ProfileSettings(name: "Purchase History"),
-        ProfileSettings(name: "Payment Information")
+        ProfileSettings(name: "My Wishlist"),
+        ProfileSettings(name: "My Photos"),
+        ProfileSettings(name: "My Hue")
         
     ]
     
@@ -78,6 +77,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
         
     }
+    
     
     
 }
