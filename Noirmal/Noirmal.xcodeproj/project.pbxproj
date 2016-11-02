@@ -24,6 +24,8 @@
 		BFD11A4A1DC91FC50047F3BD /* VideosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */; };
 		BFD11A4D1DC921AE0047F3BD /* VideoCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A4C1DC921AE0047F3BD /* VideoCategory.swift */; };
 		BFD11A5D1DC95EB90047F3BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A5C1DC95EB90047F3BD /* File.swift */; };
+		BFD11A5F1DC972BD0047F3BD /* MakeUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A5E1DC972BD0047F3BD /* MakeUpTableViewController.swift */; };
+		BFD11A611DC973490047F3BD /* MakeUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A601DC973490047F3BD /* MakeUpTableViewCell.swift */; };
 		BFF81B771DB98DFD006D01BC /* ProfileCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B761DB98DFD006D01BC /* ProfileCells.swift */; };
 		BFF81B791DB9919A006D01BC /* ProfilePicCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */; };
 		BFF81B7B1DB9A722006D01BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */; };
@@ -54,6 +56,8 @@
 		BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFD11A4C1DC921AE0047F3BD /* VideoCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCategory.swift; sourceTree = "<group>"; };
 		BFD11A5C1DC95EB90047F3BD /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BFD11A5E1DC972BD0047F3BD /* MakeUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUpTableViewController.swift; sourceTree = "<group>"; };
+		BFD11A601DC973490047F3BD /* MakeUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUpTableViewCell.swift; sourceTree = "<group>"; };
 		BFF81B761DB98DFD006D01BC /* ProfileCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCells.swift; sourceTree = "<group>"; };
 		BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePicCircle.swift; sourceTree = "<group>"; };
 		BFF81B7A1DB9A722006D01BC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 		BFD11A4E1DC946690047F3BD /* Product Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFD11A5E1DC972BD0047F3BD /* MakeUpTableViewController.swift */,
+				BFD11A601DC973490047F3BD /* MakeUpTableViewCell.swift */,
 				BFD11A5C1DC95EB90047F3BD /* File.swift */,
 			);
 			name = "Product Files";
@@ -331,9 +337,11 @@
 				BFD11A5D1DC95EB90047F3BD /* File.swift in Sources */,
 				BFB2D98B1DB989B10062F428 /* ProfileSettings.swift in Sources */,
 				BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */,
+				BFD11A5F1DC972BD0047F3BD /* MakeUpTableViewController.swift in Sources */,
 				BFF81B861DB9BA74006D01BC /* DetailCollectionViewController.swift in Sources */,
 				BFF81B821DB9B84E006D01BC /* DetailCollectionViewCell.swift in Sources */,
 				BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */,
+				BFD11A611DC973490047F3BD /* MakeUpTableViewCell.swift in Sources */,
 				BFF81B791DB9919A006D01BC /* ProfilePicCircle.swift in Sources */,
 				BFF81B7D1DB9A8FF006D01BC /* FirstLoginScreenViewController .swift in Sources */,
 				BFD11A461DC918B40047F3BD /* VideoViewController .swift in Sources */,

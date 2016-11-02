@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Gs-iR-hfo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GkD-UI-6OP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage1" translatesAutoresizingMaskIntoConstraints="NO" id="0hH-9E-NvQ">
@@ -78,7 +78,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jcO-S7-IBO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Min-PT-wmh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage1" translatesAutoresizingMaskIntoConstraints="NO" id="R6R-1j-kdC">
@@ -169,7 +169,7 @@
                         <viewControllerLayoutGuide type="bottom" id="26T-O4-ura"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aON-mK-bsp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage1" translatesAutoresizingMaskIntoConstraints="NO" id="I4t-R8-Mib">
@@ -294,7 +294,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kpa-rM-WSF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u30-81-EXU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-OO-4Di">
@@ -306,7 +306,7 @@
                                         <rect key="frame" x="0.0" y="92" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HAq-xp-343" id="0V2-cQ-J0O">
-                                            <frame key="frameInset" width="381" height="89.666666666666671"/>
+                                            <frame key="frameInset" width="381" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings Category " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF6-ES-Byl">
@@ -381,7 +381,7 @@
             <objects>
                 <collectionViewController id="6Gs-iR-hfo" customClass="TutorialsCollectionViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iUd-Yq-HZz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qFS-B3-g91">
@@ -392,7 +392,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="FqO-60-KQf" customClass="VideosCollectionViewCell" customModule="Noirmal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="199" height="230"/>
+                                <rect key="frame" x="88" y="0.0" width="199" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="199" height="230"/>
@@ -441,7 +441,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PfP-ta-khJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ba7-VP-lxe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tg6-4b-m9T">
@@ -465,15 +465,15 @@
             <objects>
                 <tableViewController title="Home" id="JpR-lA-ipy" customClass="HomeTabBarController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="ovl-E4-Ccp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="searchcategories" rowHeight="121" id="YW8-Mb-ojC" customClass="HomeCategoryTableViewCell" customModule="Noirmal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="414" height="121"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YW8-Mb-ojC" id="zN3-lu-JcF">
-                                    <frame key="frameInset" width="414" height="120.5"/>
+                                    <frame key="frameInset" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-J2-eTV">
@@ -509,7 +509,7 @@
             <objects>
                 <collectionViewController id="QDw-vH-Ry3" customClass="DetailCollectionViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YjR-UJ-Oy4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KSy-Dd-Bql">
@@ -550,6 +550,7 @@
                                 <connections>
                                     <outlet property="detailCategoryImage" destination="2wr-9S-L5E" id="Kvs-i3-6w2"/>
                                     <outlet property="detailCategoryLabel" destination="ZIs-zJ-JA2" id="pe5-NE-bag"/>
+                                    <segue destination="2AY-18-9um" kind="show" identifier="products" id="ICA-c9-Q0t"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -558,28 +559,25 @@
                             <outlet property="delegate" destination="QDw-vH-Ry3" id="o0D-Gx-Fy3"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <segue destination="2AY-18-9um" kind="show" id="puV-Ca-tZ9"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEl-qR-Nnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5082.608695652174" y="-101.08695652173914"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Make Up Table View Controller-->
         <scene sceneID="Soz-F7-Wma">
             <objects>
-                <tableViewController id="2AY-18-9um" sceneMemberID="viewController">
+                <tableViewController id="2AY-18-9um" customClass="MakeUpTableViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="211" sectionHeaderHeight="28" sectionFooterHeight="28" id="N6T-nL-cva">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="7u1-dW-con">
-                                <rect key="frame" x="0.0" y="92" width="414" height="211"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="makeupcell" rowHeight="211" id="7u1-dW-con" customClass="MakeUpTableViewCell" customModule="Noirmal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="211"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7u1-dW-con" id="9mT-OD-u39">
-                                    <frame key="frameInset" width="414" height="210.5"/>
+                                    <frame key="frameInset" width="375" height="210"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IoP-IJ-zEu">
@@ -625,6 +623,14 @@
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="company" destination="cS7-gu-oKG" id="fCr-TP-sgd"/>
+                                    <outlet property="likeImage" destination="sqv-SX-h0l" id="oI4-Ih-8ak"/>
+                                    <outlet property="pricing" destination="rn4-ti-34l" id="bQs-Xc-L9Z"/>
+                                    <outlet property="productImage" destination="IoP-IJ-zEu" id="m7G-CX-0rQ"/>
+                                    <outlet property="productName" destination="6MM-dC-0Es" id="kSc-1B-rte"/>
+                                    <outlet property="wishListButtonClicked" destination="mXP-YY-rTx" id="SRh-0b-ErB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
