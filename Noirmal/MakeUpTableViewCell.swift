@@ -12,10 +12,8 @@ class MakeUpTableViewCell: UITableViewCell {
     
     @IBOutlet weak var wishListButtonClicked: UIButton!
     @IBOutlet weak var likeImage: UIImageView!
-    
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productImage: UIImageView!
-    
     @IBOutlet weak var company: UILabel!
     @IBOutlet weak var pricing: UILabel!
 }

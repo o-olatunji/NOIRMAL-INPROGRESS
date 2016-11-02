@@ -54,7 +54,11 @@ class DetailCollectionViewController: UICollectionViewController {
     ]
     
     let cheeks: [Product] = [
-        Product(name: "Sephora Collection Cookie Crunch", pricing: "$13.00", company: "Sephora", image: #imageLiteral(resourceName: "Sephora Collection Cookie Crunch "))
+        Product(name: "Terracotta Bronzing Powder", pricing: "$53.00", company: "Guerlain ", image: #imageLiteral(resourceName: "Guerlain Terrecotta") ),
+        Product(name: "Tantalizer Baked Bronzer", pricing: "$12.00", company: "Lorec", image: #imageLiteral(resourceName: "Lorac Tantalizer Baked Bronzer")),
+        Product(name: "Pro Bronze Fusion Bronzer", pricing: "$43.00", company: "Make Up For Ever", image: #imageLiteral(resourceName: "Makeup Pro bronzer ")),
+        Product(name: "Bronzing Powder - Golden Light", pricing: "$42.00", company: "Bobbi Brown", image: #imageLiteral(resourceName: "Bobbi Brown Bronzing powder")),
+        Product(name: "Shimmer Bloc", pricing: "$38.00", company: "Laura Mercier", image: #imageLiteral(resourceName: "Laura Mercier Bronzer "))
 
     ]
     

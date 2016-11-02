@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GkD-UI-6OP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iEH-VH-62W">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -306,7 +306,7 @@
                                         <rect key="frame" x="0.0" y="92" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HAq-xp-343" id="0V2-cQ-J0O">
-                                            <frame key="frameInset" width="381" height="89"/>
+                                            <frame key="frameInset" width="381" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings Category " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF6-ES-Byl">
@@ -374,28 +374,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GO-8m-Tyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4076.811594202899" y="671.73913043478262"/>
+            <point key="canvasLocation" x="4038" y="625"/>
         </scene>
         <!--Tutorials Collection View Controller-->
         <scene sceneID="lcT-2O-xNL">
             <objects>
                 <collectionViewController id="6Gs-iR-hfo" customClass="TutorialsCollectionViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iUd-Yq-HZz">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="iUd-Yq-HZz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qFS-B3-g91">
-                            <size key="itemSize" width="199" height="230"/>
+                            <size key="itemSize" width="168" height="222"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="FqO-60-KQf" customClass="VideosCollectionViewCell" customModule="Noirmal" customModuleProvider="target">
-                                <rect key="frame" x="88" y="0.0" width="199" height="230"/>
+                                <rect key="frame" x="0.0" y="0.0" width="168" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="199" height="230"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="168" height="222"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hM-no-vmJ">
@@ -430,7 +430,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vel-X2-baE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5124.6376811594209" y="645.6521739130435"/>
+            <point key="canvasLocation" x="4879" y="672"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="AM2-SZ-hYy">
@@ -473,7 +473,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YW8-Mb-ojC" id="zN3-lu-JcF">
-                                    <frame key="frameInset" width="375" height="120"/>
+                                    <frame key="frameInset" width="375" height="120.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-J2-eTV">
@@ -489,7 +489,6 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <connections>
                                     <outlet property="categoryLabel" destination="d38-J2-eTV" id="gbB-GG-Gfx"/>
-                                    <segue destination="QDw-vH-Ry3" kind="show" id="Yrh-WW-2rg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -499,6 +498,10 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Home" id="QaV-kX-p9l"/>
+                    <connections>
+                        <segue destination="6Gs-iR-hfo" kind="show" identifier="tutorials" id="Mru-wp-iXa"/>
+                        <segue destination="QDw-vH-Ry3" kind="show" identifier="makeup" id="8l4-d6-fmK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDt-HZ-aeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,7 +511,7 @@
         <scene sceneID="Gtq-cV-auM">
             <objects>
                 <collectionViewController id="QDw-vH-Ry3" customClass="DetailCollectionViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YjR-UJ-Oy4">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="YjR-UJ-Oy4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -577,7 +580,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="211"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7u1-dW-con" id="9mT-OD-u39">
-                                    <frame key="frameInset" width="375" height="210"/>
+                                    <frame key="frameInset" width="375" height="210.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IoP-IJ-zEu">

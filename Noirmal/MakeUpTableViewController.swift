@@ -38,7 +38,7 @@ class MakeUpTableViewController: UITableViewController {
         cell.company.text = product.company
         cell.productImage.image = product.image
         cell.productName.text = product.name
-
+        cell.pricing.text = product.pricing
 
         return cell
     }
