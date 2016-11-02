@@ -321,6 +321,7 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="settingsLabel" destination="nF6-ES-Byl" id="QV8-3V-xcf"/>
+                                            <segue destination="G1P-kK-bxA" kind="show" id="Wzl-qe-3XM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -432,33 +433,76 @@
             </objects>
             <point key="canvasLocation" x="4879" y="672"/>
         </scene>
-        <!--Video View Controller-->
-        <scene sceneID="AM2-SZ-hYy">
+        <!--Wishlist View Controller-->
+        <scene sceneID="SZr-k9-6tq">
             <objects>
-                <viewController id="mFi-1V-LPa" customClass="VideoViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EKJ-HI-DCw"/>
-                        <viewControllerLayoutGuide type="bottom" id="PfP-ta-khJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ba7-VP-lxe">
+                <tableViewController id="G1P-kK-bxA" customClass="WishlistViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="28" sectionFooterHeight="28" id="c4b-fB-3hv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tg6-4b-m9T">
-                                <frame key="frameInset" minX="71" minY="78" width="272" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.81176470590000005" green="0.43921568630000002" blue="0.015686274510000001" alpha="0.36865580669999998" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="videoView" destination="Tg6-4b-m9T" id="KKp-rl-mGT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xJW-8H-AGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="aVf-VP-Loq">
+                                <rect key="frame" x="0.0" y="92" width="375" height="178"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aVf-VP-Loq" id="S33-TK-zbK">
+                                    <frame key="frameInset" width="375" height="177"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-fK-YDA">
+                                            <frame key="frameInset" minX="20" minY="37" width="98" height="103"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI9-rj-vdB">
+                                            <frame key="frameInset" minX="142" minY="37" width="95" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2O-hv-uVO">
+                                            <frame key="frameInset" minX="142" minY="78" width="95" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sz-pQ-fI8">
+                                            <frame key="frameInset" minX="142" minY="119" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwL-hD-pj9">
+                                            <frame key="frameInset" minX="235" minY="119" width="34" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter share " translatesAutoresizingMaskIntoConstraints="NO" id="Kbj-0q-54K">
+                                            <frame key="frameInset" minX="235" minY="119" width="34" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook share" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-Vz-Oif">
+                                            <frame key="frameInset" minX="277" minY="119" width="34" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoB-KH-n4B">
+                                            <frame key="frameInset" minX="277" minY="119" width="40" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G1P-kK-bxA" id="e6G-Tw-k90"/>
+                            <outlet property="delegate" destination="G1P-kK-bxA" id="RtO-YD-dox"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7d3-T0-tv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4640.8000000000002" y="1512.5937031484259"/>
+            <point key="canvasLocation" x="5817" y="1639"/>
         </scene>
         <!--Home-->
         <scene sceneID="eKk-RZ-jdc">
@@ -633,6 +677,7 @@
                                     <outlet property="productImage" destination="IoP-IJ-zEu" id="m7G-CX-0rQ"/>
                                     <outlet property="productName" destination="6MM-dC-0Es" id="kSc-1B-rte"/>
                                     <outlet property="wishListButtonClicked" destination="mXP-YY-rTx" id="SRh-0b-ErB"/>
+                                    <segue destination="G1P-kK-bxA" kind="show" identifier="wishlist" id="xAG-VY-x59"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -685,13 +730,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook share" width="128" height="128"/>
         <image name="heart" width="512" height="512"/>
         <image name="homepage1" width="469" height="574"/>
         <image name="lips" width="400" height="400"/>
         <image name="logout " width="48" height="48"/>
         <image name="profilepic" width="254" height="254"/>
+        <image name="twitter share " width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PLA-Pr-zGy"/>
+        <segue reference="xAG-VY-x59"/>
     </inferredMetricsTieBreakers>
 </document>

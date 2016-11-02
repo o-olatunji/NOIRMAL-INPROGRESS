@@ -42,7 +42,24 @@ class MakeUpTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "wishlist" {
+            
+            let destinationVC = segue.destinationViewController as? WishlistViewController
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                
+                let selectedRow = [indexPath.row]
+                
+                destinationVC.imageName2 = selectedRow.0
+                destinationVC.textName2 = selectedRow.1
+    }
  
+    
+    
+    
+            }
 
     /*
     // Override to support conditional editing of the table view.
