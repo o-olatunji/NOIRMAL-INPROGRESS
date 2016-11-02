@@ -22,6 +22,7 @@
 		BFC522F91DC9BAD400D14FA7 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC522F81DC9BAD400D14FA7 /* WishlistViewController.swift */; };
 		BFC522FB1DCA548D00D14FA7 /* Wishlist Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC522FA1DCA548D00D14FA7 /* Wishlist Cell.swift */; };
 		BFC522FD1DCA6FE700D14FA7 /* WishlistClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC522FC1DCA6FE700D14FA7 /* WishlistClass.swift */; };
+		BFC522FF1DCA8E2600D14FA7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC522FE1DCA8E2600D14FA7 /* Social.framework */; };
 		BFD11A461DC918B40047F3BD /* VideoViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A451DC918B30047F3BD /* VideoViewController .swift */; };
 		BFD11A481DC91E3C0047F3BD /* TutorialsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A471DC91E3C0047F3BD /* TutorialsCollectionViewController.swift */; };
 		BFD11A4A1DC91FC50047F3BD /* VideosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */; };
@@ -57,6 +58,7 @@
 		BFC522F81DC9BAD400D14FA7 /* WishlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WishlistViewController.swift; path = Noirmal/WishlistViewController.swift; sourceTree = "<group>"; };
 		BFC522FA1DCA548D00D14FA7 /* Wishlist Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Wishlist Cell.swift"; path = "Noirmal/Wishlist Cell.swift"; sourceTree = "<group>"; };
 		BFC522FC1DCA6FE700D14FA7 /* WishlistClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistClass.swift; sourceTree = "<group>"; };
+		BFC522FE1DCA8E2600D14FA7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BFD11A451DC918B30047F3BD /* VideoViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoViewController .swift"; sourceTree = "<group>"; };
 		BFD11A471DC91E3C0047F3BD /* TutorialsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialsCollectionViewController.swift; sourceTree = "<group>"; };
 		BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC522FF1DCA8E2600D14FA7 /* Social.framework in Frameworks */,
 				5C0D6392C77D47A953844CE3 /* Pods_Noirmal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +101,7 @@
 		B743A0B6303E98373F6C7D59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFC522FE1DCA8E2600D14FA7 /* Social.framework */,
 				EC4F0FE2DBCF7C5C768B06A8 /* Pods_Noirmal.framework */,
 			);
 			name = Frameworks;

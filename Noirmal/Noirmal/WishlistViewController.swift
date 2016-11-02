@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import Social 
 
 class WishlistViewController: UITableViewController {
     
 
+    @IBAction func shareToTwitter(_ sender: UIButton) {
+    }
+    
+    
+   
+    @IBAction func shareToFacebook(_ sender: AnyObject) {
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
