@@ -67,11 +67,11 @@ class HomeTabBarController: UITableViewController {
             performSegue(withIdentifier: "tutorials", sender: self)
         }
         
-        else {
+     /*   else {
             
-            performSegue(withIdentifier: "makeup", sender: self)
+            performSegue(withIdentifier: "tutorials", sender: self)
         }
-        
+        */
     }
     
     

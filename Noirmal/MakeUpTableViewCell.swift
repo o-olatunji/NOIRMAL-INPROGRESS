@@ -10,6 +10,7 @@ import UIKit
 
 class MakeUpTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var wishListButtonClicked: UIButton!
     @IBOutlet weak var likeImage: UIImageView!
     @IBOutlet weak var productName: UILabel!
