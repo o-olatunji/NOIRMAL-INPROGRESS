@@ -7,17 +7,26 @@
 //
 
 import UIKit
-import Social 
+import Social
 
 class WishlistViewController: UITableViewController {
     
 
     @IBAction func shareToTwitter(_ sender: UIButton) {
+        
+        var shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        shareToTwitter.setInitialText("Hey everyone! I found this amazing product that compliments my personal hue. You can find it and other items on my wishlist on the app Noirmal!")
+        self.present(shareToTwitter, animated: true, completion: nil)
+    
     }
-    
-    
+  
    
     @IBAction func shareToFacebook(_ sender: AnyObject) {
+        
+        var shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+         shareToFacebook.setInitialText("Hey everyone! I found this amazing product that compliments my personal hue. You can find it and other items on my wishlist on the app Noirmal!")
+        self.present(shareToFacebook, animated: true, completion: nil)
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,12 +48,9 @@ class WishlistViewController: UITableViewController {
         cell.name.text = wishlists.name
         cell.price.text = wishlists.pricing
         
-        
         return cell
         
     }
-    
-
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         
@@ -56,8 +62,7 @@ class WishlistViewController: UITableViewController {
         let deleteBagitem = UITableViewRowAction(style: .normal, title: " Delete") { action, index in
             
           wishlist.remove(at: indexPath.row)
-            
-            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             
         }
         deleteBagitem.backgroundColor = UIColor.red
