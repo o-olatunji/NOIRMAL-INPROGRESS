@@ -27,7 +27,7 @@ class DetailCollectionViewController: UICollectionViewController {
         Detail(image: #imageLiteral(resourceName: "tutorial "), label: "TUTORIALS")
     ]
     
-    let eyes: [Product] = [
+    public let eyes: [Product] = [
         
         Product(name: "Sephora Collection Cookie Crunch", pricing: "$13.00", company: "Sephora", image: #imageLiteral(resourceName: "Sephora Collection Cookie Crunch ")),
         Product(name: "Loreal Studio Secrets Mettalic Duo - Gilde", pricing: "$14.00", company: "L'oreal", image: #imageLiteral(resourceName: "Loreal Studio Secrets Metallic Duo")),
@@ -37,7 +37,7 @@ class DetailCollectionViewController: UICollectionViewController {
         
     ]
     
-    let lips: [Product] = [
+   public let lips: [Product] = [
         Product(name: "Cyber", pricing: "$17.00", company: "Mac", image:  #imageLiteral(resourceName: "mac cyber")),
         Product(name: "Jubilee", pricing: "$17.00", company: "Mac", image:  #imageLiteral(resourceName: "mac jubilee")),
         Product(name: "Rebel", pricing: "17.00", company: "Mac", image:  #imageLiteral(resourceName: "mac rebel ")),
@@ -45,7 +45,7 @@ class DetailCollectionViewController: UICollectionViewController {
         Product(name: "Morange", pricing: "$17.00", company: "Mac", image:  #imageLiteral(resourceName: "mac morange"))
     ]
     
-    let face: [Product] = [
+    public let face: [Product] = [
         Product(name: "Sephora Collection Cookie Crunch", pricing: "$13.00", company: "Sephora", image: #imageLiteral(resourceName: "Sephora Collection Cookie Crunch ")),
         Product(name: "Traceless Foundation SP 15 - Almond", pricing: "$83.00", company: "Tom Ford", image: #imageLiteral(resourceName: "Tom Ford Traceless Foundation SPF 15 Almond ")),
         Product(name: "Ultra HD Foundation - Coffee", pricing: "$43.00", company: "Makeup Forever", image: #imageLiteral(resourceName: "Ultra HD Foundation - Coffee ")),
@@ -53,7 +53,7 @@ class DetailCollectionViewController: UICollectionViewController {
         Product(name: "DiorSkin Star - Ebony", pricing: "$52.00", company: "Dior", image: #imageLiteral(resourceName: "DiorSkin Star Ebony"))
     ]
     
-    let cheeks: [Product] = [
+    public let cheeks: [Product] = [
         Product(name: "Terracotta Bronzing Powder", pricing: "$53.00", company: "Guerlain ", image: #imageLiteral(resourceName: "Guerlain Terrecotta") ),
         Product(name: "Tantalizer Baked Bronzer", pricing: "$12.00", company: "Lorec", image: #imageLiteral(resourceName: "Lorac Tantalizer Baked Bronzer")),
         Product(name: "Pro Bronze Fusion Bronzer", pricing: "$43.00", company: "Make Up For Ever", image: #imageLiteral(resourceName: "Makeup Pro bronzer ")),
@@ -62,11 +62,11 @@ class DetailCollectionViewController: UICollectionViewController {
 
     ]
     
-    let tools: [Product] = [
+   public let tools: [Product] = [
         
     ]
     
-    let nude: [Product] = [
+   public  let nude: [Product] = [
         
     ]
     

@@ -442,7 +442,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="aVf-VP-Loq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="wishlistcell" rowHeight="178" id="aVf-VP-Loq" customClass="WishlistCell" customModule="Noirmal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="178"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aVf-VP-Loq" id="S33-TK-zbK">
@@ -492,6 +492,12 @@
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="company" destination="YI9-rj-vdB" id="Mhy-0S-OTj"/>
+                                    <outlet property="name" destination="S2O-hv-uVO" id="lLh-F0-H4E"/>
+                                    <outlet property="price" destination="2Sz-pQ-fI8" id="BuB-4X-uSg"/>
+                                    <outlet property="wishlistImage" destination="s3n-fK-YDA" id="qmc-OG-Nyb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -645,14 +651,6 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="sqv-SX-h0l">
-                                            <frame key="frameInset" minX="312" minY="41" width="34" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXP-YY-rTx">
-                                            <frame key="frameInset" minX="312" minY="41" width="34" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add to Wishlist " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-Jn-naD">
                                             <frame key="frameInset" minX="271" minY="79" width="116" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -667,17 +665,24 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXP-YY-rTx">
+                                            <frame key="frameInset" minX="312" minY="41" width="34" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="heart"/>
+                                            <connections>
+                                                <action selector="addToWishlistButtonClicked:" destination="2AY-18-9um" eventType="touchUpInside" id="RzV-hc-HjM"/>
+                                                <segue destination="G1P-kK-bxA" kind="show" identifier="wishlist" id="aS2-1d-KQx"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="company" destination="cS7-gu-oKG" id="fCr-TP-sgd"/>
-                                    <outlet property="likeImage" destination="sqv-SX-h0l" id="oI4-Ih-8ak"/>
                                     <outlet property="pricing" destination="rn4-ti-34l" id="bQs-Xc-L9Z"/>
                                     <outlet property="productImage" destination="IoP-IJ-zEu" id="m7G-CX-0rQ"/>
                                     <outlet property="productName" destination="6MM-dC-0Es" id="kSc-1B-rte"/>
                                     <outlet property="wishListButtonClicked" destination="mXP-YY-rTx" id="SRh-0b-ErB"/>
-                                    <segue destination="G1P-kK-bxA" kind="show" identifier="wishlist" id="xAG-VY-x59"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -689,7 +694,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqp-nU-kkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5856.521739130435" y="-101.90217391304348"/>
+            <point key="canvasLocation" x="5855.1999999999998" y="-102.09895052473765"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8si-VE-Pnz">
@@ -740,6 +745,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PLA-Pr-zGy"/>
-        <segue reference="xAG-VY-x59"/>
+        <segue reference="aS2-1d-KQx"/>
     </inferredMetricsTieBreakers>
 </document>
