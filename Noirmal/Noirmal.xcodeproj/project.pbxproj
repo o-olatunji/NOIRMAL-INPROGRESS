@@ -24,6 +24,9 @@
 		BFC522FD1DCA6FE700D14FA7 /* WishlistClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC522FC1DCA6FE700D14FA7 /* WishlistClass.swift */; };
 		BFC522FF1DCA8E2600D14FA7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC522FE1DCA8E2600D14FA7 /* Social.framework */; };
 		BFC523051DCA95D300D14FA7 /* background.gif in Resources */ = {isa = PBXBuildFile; fileRef = BFC523041DCA95D300D14FA7 /* background.gif */; };
+		BFC5230B1DCAD8EE00D14FA7 /*  HueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5230A1DCAD8EE00D14FA7 /*  HueTableViewCell.swift */; };
+		BFC5230D1DCAD91300D14FA7 /* HueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5230C1DCAD91300D14FA7 /* HueTableViewController.swift */; };
+		BFC5230F1DCAE10700D14FA7 /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5230E1DCAE10700D14FA7 /* Hue.swift */; };
 		BFD11A461DC918B40047F3BD /* VideoViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A451DC918B30047F3BD /* VideoViewController .swift */; };
 		BFD11A481DC91E3C0047F3BD /* TutorialsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A471DC91E3C0047F3BD /* TutorialsCollectionViewController.swift */; };
 		BFD11A4A1DC91FC50047F3BD /* VideosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */; };
@@ -62,6 +65,9 @@
 		BFC522FE1DCA8E2600D14FA7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BFC523041DCA95D300D14FA7 /* background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = background.gif; sourceTree = "<group>"; };
 		BFC523081DCAA06400D14FA7 /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background.mp4; sourceTree = "<group>"; };
+		BFC5230A1DCAD8EE00D14FA7 /*  HueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " HueTableViewCell.swift"; sourceTree = "<group>"; };
+		BFC5230C1DCAD91300D14FA7 /* HueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueTableViewController.swift; sourceTree = "<group>"; };
+		BFC5230E1DCAE10700D14FA7 /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
 		BFD11A451DC918B30047F3BD /* VideoViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoViewController .swift"; sourceTree = "<group>"; };
 		BFD11A471DC91E3C0047F3BD /* TutorialsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialsCollectionViewController.swift; sourceTree = "<group>"; };
 		BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				BFF81B761DB98DFD006D01BC /* ProfileCells.swift */,
 				BFF81B781DB9919A006D01BC /* ProfilePicCircle.swift */,
 				BFB2D98A1DB989B10062F428 /* ProfileSettings.swift */,
+				BFC5230A1DCAD8EE00D14FA7 /*  HueTableViewCell.swift */,
+				BFC5230C1DCAD91300D14FA7 /* HueTableViewController.swift */,
+				BFC5230E1DCAE10700D14FA7 /* Hue.swift */,
 			);
 			name = "Profile Page Files";
 			sourceTree = "<group>";
@@ -350,6 +359,7 @@
 			files = (
 				BFF81B7B1DB9A722006D01BC /* SignUpViewController.swift in Sources */,
 				BFF81B771DB98DFD006D01BC /* ProfileCells.swift in Sources */,
+				BFC5230D1DCAD91300D14FA7 /* HueTableViewController.swift in Sources */,
 				BFB2D9831DB97E2F0062F428 /* LoginViewController.swift in Sources */,
 				BFB887A41DA8656800F50276 /* ViewController.swift in Sources */,
 				BFD11A4A1DC91FC50047F3BD /* VideosCollectionViewCell.swift in Sources */,
@@ -359,6 +369,7 @@
 				BFB2D9811DB978530062F428 /* HomeCategoryTableViewCell.swift in Sources */,
 				BFD11A5F1DC972BD0047F3BD /* MakeUpTableViewController.swift in Sources */,
 				BFF81B861DB9BA74006D01BC /* DetailCollectionViewController.swift in Sources */,
+				BFC5230B1DCAD8EE00D14FA7 /*  HueTableViewCell.swift in Sources */,
 				BFF81B821DB9B84E006D01BC /* DetailCollectionViewCell.swift in Sources */,
 				BFB887A21DA8656800F50276 /* AppDelegate.swift in Sources */,
 				BFD11A611DC973490047F3BD /* MakeUpTableViewCell.swift in Sources */,
@@ -368,6 +379,7 @@
 				BFD11A481DC91E3C0047F3BD /* TutorialsCollectionViewController.swift in Sources */,
 				BFB2D9881DB982AF0062F428 /* ProfileViewController.swift in Sources */,
 				BFB2D9501DB96CC80062F428 /* HomeTabBarController.swift in Sources */,
+				BFC5230F1DCAE10700D14FA7 /* Hue.swift in Sources */,
 				BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */,
 				BFD11A4D1DC921AE0047F3BD /* VideoCategory.swift in Sources */,
 				BFC522FD1DCA6FE700D14FA7 /* WishlistClass.swift in Sources */,
