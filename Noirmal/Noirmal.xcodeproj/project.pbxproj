@@ -27,6 +27,7 @@
 		BFC5230B1DCAD8EE00D14FA7 /*  HueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5230A1DCAD8EE00D14FA7 /*  HueTableViewCell.swift */; };
 		BFC5230D1DCAD91300D14FA7 /* HueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5230C1DCAD91300D14FA7 /* HueTableViewController.swift */; };
 		BFC5230F1DCAE10700D14FA7 /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC5230E1DCAE10700D14FA7 /* Hue.swift */; };
+		BFC523111DCBA60700D14FA7 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC523101DCBA60700D14FA7 /* MapsViewController.swift */; };
 		BFD11A461DC918B40047F3BD /* VideoViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A451DC918B30047F3BD /* VideoViewController .swift */; };
 		BFD11A481DC91E3C0047F3BD /* TutorialsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A471DC91E3C0047F3BD /* TutorialsCollectionViewController.swift */; };
 		BFD11A4A1DC91FC50047F3BD /* VideosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */; };
@@ -68,6 +69,7 @@
 		BFC5230A1DCAD8EE00D14FA7 /*  HueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " HueTableViewCell.swift"; sourceTree = "<group>"; };
 		BFC5230C1DCAD91300D14FA7 /* HueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueTableViewController.swift; sourceTree = "<group>"; };
 		BFC5230E1DCAE10700D14FA7 /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
+		BFC523101DCBA60700D14FA7 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		BFD11A451DC918B30047F3BD /* VideoViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoViewController .swift"; sourceTree = "<group>"; };
 		BFD11A471DC91E3C0047F3BD /* TutorialsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialsCollectionViewController.swift; sourceTree = "<group>"; };
 		BFD11A491DC91FC50047F3BD /* VideosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				BFB887AA1DA8656800F50276 /* LaunchScreen.storyboard */,
 				BFB887A51DA8656800F50276 /* Main.storyboard */,
+				BFC523101DCBA60700D14FA7 /* MapsViewController.swift */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				BFD11A481DC91E3C0047F3BD /* TutorialsCollectionViewController.swift in Sources */,
 				BFB2D9881DB982AF0062F428 /* ProfileViewController.swift in Sources */,
 				BFB2D9501DB96CC80062F428 /* HomeTabBarController.swift in Sources */,
+				BFC523111DCBA60700D14FA7 /* MapsViewController.swift in Sources */,
 				BFC5230F1DCAE10700D14FA7 /* Hue.swift in Sources */,
 				BFB2D97F1DB977200062F428 /* HomeCategories .swift in Sources */,
 				BFD11A4D1DC921AE0047F3BD /* VideoCategory.swift in Sources */,

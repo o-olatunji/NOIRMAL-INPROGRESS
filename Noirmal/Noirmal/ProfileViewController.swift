@@ -17,8 +17,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     let profile: [ProfileSettings] = [
         
         ProfileSettings(name: "My Wishlist"),
-        ProfileSettings(name: "My Photos"),
-        ProfileSettings(name: "My Hue")
+        ProfileSettings(name: "My Hue"),
+        ProfileSettings(name: "Find Stores Near Me")
         
     ]
     
@@ -86,7 +86,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             performSegue(withIdentifier: "wishlist", sender: self)
         }
         
-        if indexPath.row == 2 {
+        if indexPath.row == 1 {
             
             performSegue(withIdentifier: "choosehue", sender: self)
         }
