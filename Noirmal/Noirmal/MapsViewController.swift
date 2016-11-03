@@ -30,7 +30,8 @@ class MapsViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        self.navigationController?.isNavigationBarHidden = false
         
         //searchbar code
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationTableViewController
@@ -91,9 +92,7 @@ class MapsViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         
     }
     
-    
-    
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    @objc(mapView:viewForAnnotation:) func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
         }
@@ -106,12 +105,15 @@ class MapsViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         let smallSquare = CGSize(width: 30, height: 30)
         let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
         button.setBackgroundImage(UIImage(named: "lipstick"), for: .normal)
-        button.addTarget(self, action: "getDirections", for: .touchUpInside)
+        button.addTarget(self, action: #selector(MapsViewController.getDirections), for: .touchUpInside)
         pinView?.leftCalloutAccessoryView = button
         return pinView
     }
     
+
 }
+
+
 
 
 extension MapsViewController: HandleMapSearch {
@@ -124,7 +126,7 @@ extension MapsViewController: HandleMapSearch {
         annotation.coordinate = placemark.coordinate
         annotation.title = placemark.name
         if let city = placemark.locality,
-            let state = placemark.administrativeArea {
+        let state = placemark.administrativeArea {
             annotation.subtitle = "(city)(state)"
         }
         

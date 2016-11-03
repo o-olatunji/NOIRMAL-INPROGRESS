@@ -91,6 +91,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             performSegue(withIdentifier: "choosehue", sender: self)
         }
         
+        if indexPath.row == 2 {
+            performSegue(withIdentifier: "maps", sender: self)
+        }
+        
         
     }
 }
