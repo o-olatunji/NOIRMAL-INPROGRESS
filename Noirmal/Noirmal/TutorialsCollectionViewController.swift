@@ -12,6 +12,8 @@ import UIKit
 
 class TutorialsCollectionViewController: UICollectionViewController {
     
+    @IBOutlet weak var activityLoading: UIActivityIndicatorView!
+    
     let videos: [Videos] = [
     
         Videos(title: "Dark Skin | How To Bake Your Face", video: "https://www.youtube.com/embed/2vhjH0f41Ao"),

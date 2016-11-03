@@ -79,6 +79,18 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            
+            performSegue(withIdentifier: "wishlist", sender: self)
+        }
+        
+        if indexPath.row == 2 {
+            
+            performSegue(withIdentifier: "choosehue", sender: self)
+        }
+        
+        
+    }
 }

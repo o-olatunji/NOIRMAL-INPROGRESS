@@ -23,7 +23,17 @@ class HueTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.isNavigationBarHidden = false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+        
+    
+    
+
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
