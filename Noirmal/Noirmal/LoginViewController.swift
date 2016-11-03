@@ -6,4 +6,21 @@
 //  Copyright © 2016 Olamide Olatunji. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class LoginViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        
+       super.viewDidLoad()
+        
+    }
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isToolbarHidden = true
+    }
+    
+}

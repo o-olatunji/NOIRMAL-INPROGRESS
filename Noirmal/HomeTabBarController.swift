@@ -15,16 +15,16 @@ class HomeTabBarController: UITableViewController {
         Categories(name: "Make Up" ),
         Categories(name: "Skin Care"),
         Categories(name: "Clothing"),
-        Categories(name: "Hoisery"),
-        Categories(name: "Intimate"),
-        Categories(name: "Other Products")
+        Categories(name: "Intimate Apparel"),
+        Categories(name: "Nude"),
+        Categories(name: "Tutorials")
         
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,4 +55,47 @@ class HomeTabBarController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            
+            performSegue(withIdentifier: "makeup", sender: self)
+        }
+        
+        if indexPath.row == 5 {
+            
+            performSegue(withIdentifier: "tutorials", sender: self)
+        }
+        
+     /*   else {
+            
+            performSegue(withIdentifier: "tutorials", sender: self)
+        }
+        */
+    }
+    
+    
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tutorials" {
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                guard let destinationVC = segue.destination as? TutorialsCollectionViewController
+                    else { return }
+            }
+    
+    
+}
+
+        if segue.identifier == "makeup" {
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                guard let destinationVC = segue.destination as? MakeUpTableViewController
+                
+                    else {return}
+            }
+        }
+
+} */
 }
