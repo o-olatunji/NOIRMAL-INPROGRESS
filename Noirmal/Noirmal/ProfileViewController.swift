@@ -11,6 +11,7 @@ import Photos
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var profileBackgroundImage: UIImageView!
     let picker = UIImagePickerController()
     
     let profile: [ProfileSettings] = [

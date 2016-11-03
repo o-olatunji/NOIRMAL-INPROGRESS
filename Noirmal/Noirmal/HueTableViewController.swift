@@ -10,6 +10,8 @@ import UIKit
 
 class HueTableViewController: UITableViewController {
     
+    var colorImageController = ProfileViewController()
+    
     var hues: [Hue] = [
     
     Hue(name: "Toffee", female: #imageLiteral(resourceName: "PaulaPatton"), description: "Sweet like everyone's favorite treat. Add some sugar to your collection with products for your hue!", actresses: "Paula Patton, Jurnee Smollet-Bell, Rochelle Aytes", hue: #imageLiteral(resourceName: "Toffee")),
@@ -43,6 +45,31 @@ class HueTableViewController: UITableViewController {
         cell.hueColorName.text = hue.name
         
         return cell
+    }
+    
+    
+    @IBAction func hueButtonClicked(_ sender: UIButton) {
+        
+        let alertController = UIAlertController(title: "Add To Profile", message: "Do you want to add this hue to your profile?", preferredStyle: UIAlertControllerStyle.alert)
+        let CancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default) { (result: UIAlertAction) -> Void in
+            print("Cancel")
+        }
+        let ProceedAction = UIAlertAction(title: "Yes, add my hue", style: UIAlertActionStyle.default) { (result: UIAlertAction) -> Void in
+            print("added")
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                self.colorImageController.profileBackgroundImage.image = self.hues[indexPath.row].hue
+            }
+            //eventually this is where i'll append the profile image 
+            
+            
+        }
+        alertController.addAction(CancelAction)
+        alertController.addAction(ProceedAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iEH-VH-62W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qRK-S8-2oB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -381,6 +381,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile " id="bCw-HA-haT"/>
                     <connections>
+                        <outlet property="profileBackgroundImage" destination="Uk9-YK-9k1" id="CmN-yV-Fto"/>
                         <outlet property="profilePicture" destination="plr-oE-Xa2" id="Blz-EW-cxV"/>
                     </connections>
                 </viewController>
@@ -395,7 +396,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iUd-Yq-HZz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qFS-B3-g91">
                             <size key="itemSize" width="168" height="222"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -422,6 +423,7 @@
                                         </label>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="3hM-no-vmJ" firstAttribute="top" secondItem="FqO-60-KQf" secondAttribute="top" id="0T3-Jb-NPO"/>
                                     <constraint firstItem="3hM-no-vmJ" firstAttribute="height" secondItem="FqO-60-KQf" secondAttribute="height" multiplier="0.7" id="6nx-1f-wud"/>
@@ -588,7 +590,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YjR-UJ-Oy4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KSy-Dd-Bql">
                             <size key="itemSize" width="182" height="201"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -707,6 +709,7 @@
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="button" destination="mXP-YY-rTx" id="AWx-hZ-7qK"/>
                                     <outlet property="company" destination="cS7-gu-oKG" id="fCr-TP-sgd"/>
@@ -746,10 +749,10 @@
             </objects>
             <point key="canvasLocation" x="2793" y="465"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Hue Table View Controller-->
         <scene sceneID="KWf-fP-qHg">
             <objects>
-                <tableViewController id="qRK-S8-2oB" sceneMemberID="viewController">
+                <tableViewController id="qRK-S8-2oB" customClass="HueTableViewController" customModule="Noirmal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="186" sectionHeaderHeight="28" sectionFooterHeight="28" id="XBi-Mo-wGs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -787,12 +790,12 @@
                                             <frame key="frameInset" minX="28" minY="25" width="101" height="104"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSV-l5-DOy">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSV-l5-DOy">
                                                     <frame key="frameInset" width="101" height="104"/>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-vG-K5Z" customClass="CircleImageView" customModule="Noirmal" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-vG-K5Z" customClass="CircleImageView" customModule="Noirmal" customModuleProvider="target">
                                             <frame key="frameInset" minX="336" minY="116" width="56" height="53"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <userDefinedRuntimeAttributes>
@@ -805,8 +808,16 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX2-3p-e7b">
+                                            <frame key="frameInset" minX="336" minY="116" width="56" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="hueButtonClicked:" destination="qRK-S8-2oB" eventType="touchUpInside" id="YF9-zF-MBS"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="actressImage" destination="hSV-l5-DOy" id="P9K-1S-RXz"/>
                                     <outlet property="hueActressNames" destination="TG7-LL-yN2" id="c9e-YI-C5w"/>
