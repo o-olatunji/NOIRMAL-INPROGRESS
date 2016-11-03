@@ -10,6 +10,8 @@ import UIKit
 
 class HueTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var tagButton: UIButton!
+    
     @IBOutlet weak var hueColorImage: CircleImageView!
     @IBOutlet weak var hueActressNames: UILabel!
     
@@ -17,4 +19,8 @@ class HueTableViewCell: UITableViewCell {
     @IBOutlet weak var actressImage: UIImageView!
     
     @IBOutlet weak var hueColorName: UILabel!
+    
+    
+    
+   
 }

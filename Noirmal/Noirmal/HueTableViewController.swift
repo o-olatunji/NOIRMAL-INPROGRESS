@@ -11,6 +11,9 @@ import UIKit
 class HueTableViewController: UITableViewController {
     
     var colorImageController = ProfileViewController()
+    var hueCell = HueTableViewCell()
+    
+
     
     var hues: [Hue] = [
     
@@ -81,6 +84,40 @@ class HueTableViewController: UITableViewController {
         self.present(alertController, animated: true, completion: nil)
         
     }
+    
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tagged" {
+            
+            if let indexPath = collectionView?.indexPath(for: sender as! DetailCollectionViewCell) {
+                
+                guard let destinationVC = segue.destination as? MakeUpTableViewController
+                    else { return }
+                
+                switch indexPath.row {
+                case 0:
+                    destinationVC.products = lips
+                    
+                case 1:
+                    destinationVC.products = eyes
+                    
+                case 2:
+                    destinationVC.products = face
+                    
+                case 3:
+                    destinationVC.products = cheeks
+                    
+                case 4:
+                    destinationVC.products = tools
+                    
+                case 5:
+                    
+                    destinationVC.products = nude
+                default:
+                    break
+                }
+                
+            }
+        } */
     
 
     
