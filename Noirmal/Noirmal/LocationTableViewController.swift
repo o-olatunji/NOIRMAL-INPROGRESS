@@ -13,6 +13,7 @@ class LocationTableViewController: UITableViewController, UISearchControllerDele
     
     var matchingItems: [MKMapItem] = []
     var mapView: MKMapView? = nil
+    var handleMapSearchDelegate: HandleMapSearch? = nil
     
     
     //creating the address pulled from nearby location 
@@ -28,9 +29,9 @@ class LocationTableViewController: UITableViewController, UISearchControllerDele
             format: "%@%@%@%@%@%@%@",
             
             selectedItem.subThoroughfare ?? "",
-            firstSpace,
+            firstSpace as CVarArg,
             selectedItem.thoroughfare ?? "",
-            comma,
+            comma as CVarArg,
             selectedItem.locality ?? "",
             secondSpace,
             selectedItem.administrativeArea ?? "")
@@ -46,11 +47,10 @@ class LocationTableViewController: UITableViewController, UISearchControllerDele
 
 
 extension LocationTableViewController: UISearchResultsUpdating {
-    
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        
+    @available(iOS 8.0, *)
+    public func updateSearchResults(for searchController: UISearchController) {
         // this unwraps the values for mapView and search bar text that you'll have once entering data
-        //it then makes the search request within your region identified by Core Location 
+        //it then makes the search request within your region identified by Core Location
         //then it executes the search and stores the result in matching items. We display those items as response and reload the tableView
         guard let mapView = mapView,
             let searchBarText = searchController.searchBar.text else {return}
@@ -66,9 +66,9 @@ extension LocationTableViewController: UISearchResultsUpdating {
             self.matchingItems = response.mapItems
             self.tableView.reloadData()
         }
-        
-        
     }
+
+
 }
 
 
@@ -87,6 +87,17 @@ extension LocationTableViewController {
         cell.detailTextLabel?.text = parseAddress(selectedItem: selectedItem)
         
         return cell
+    }
+    
+    
+}
+
+extension LocationTableViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedItem = matchingItems[indexPath.row].placemark
+        handleMapSearchDelegate?.dropPinZoomIn(placemark: selectedItem)
+        dismiss(animated: true, completion: nil)
     }
     
 }
