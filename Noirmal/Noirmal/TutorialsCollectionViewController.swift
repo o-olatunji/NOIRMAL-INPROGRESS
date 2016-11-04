@@ -26,41 +26,22 @@ class TutorialsCollectionViewController: UICollectionViewController {
         Videos(title: "5 Pink Nude Lips Combos for Darker Skin! WOC", video: "https://www.youtube.com/embed/YgB5SrNSYjw"),
         Videos(title: "36 MAC Lipsticks on Darker Skin", video: "https://www.youtube.com/embed/O7FddQAEuKU"),
         Videos(title: "Top NUDE Lips for WOC//DO's & DON'Ts!", video: "https://www.youtube.com/embed/Cff_8-n1XuI")
-    
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return videos.count
     }
 
