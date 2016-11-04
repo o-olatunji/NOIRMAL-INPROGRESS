@@ -11,8 +11,18 @@ import Photos
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var changeView: UIView!
     @IBOutlet weak var profileBackgroundImage: UIImageView!
     let picker = UIImagePickerController()
+    
+    //  func changeProfileImage(notification: Notification) {
+    
+    // NotificationCenter.default.addObserver(self, selector: #selector(ProfileViewController.changeProfileImage), name: NSNotification.Name(rawValue: "changeProfileImage"), object: nil)
+    
+    //    print("changed")
+    
+    //   }
+    
     
     let profile: [ProfileSettings] = [
         
@@ -36,7 +46,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         picker.delegate = self
         
     }
@@ -48,33 +58,24 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         profilePicture.contentMode = .scaleAspectFill
         profilePicture.image = chosenImage
         dismiss(animated:true, completion: nil)
-        
     }
-    
-    
+
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return profile.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "settings", for: indexPath) as? ProfileSettingsCell else { return UITableViewCell() }
-        
         let setting = profile[indexPath.row]
-        
         cell.settingsLabel.text = setting.name
-        
         return cell
         
     }
@@ -82,19 +83,16 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == 0 {
-            
             performSegue(withIdentifier: "wishlist", sender: self)
         }
         
         if indexPath.row == 1 {
-            
             performSegue(withIdentifier: "choosehue", sender: self)
         }
         
         if indexPath.row == 2 {
             performSegue(withIdentifier: "maps", sender: self)
         }
-        
-        
+   
     }
 }
