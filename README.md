@@ -23,10 +23,10 @@ YoutubeSDK
 PinterestSDK
 PhotoLibrary Framework 
 Macy's Integration 
-Coupons etc!
+Coupons
 
-![grooma-user-flow-p2](https://cloud.githubusercontent.com/assets/20737269/19841505/f8159688-9ec9-11e6-92a9-fd2509c24596.gif)
 
+![nov-04-2016 00-42-48](https://cloud.githubusercontent.com/assets/20820597/19998053/ae96a752-a227-11e6-9456-d538d5e989e6.gif)
 
 
 
