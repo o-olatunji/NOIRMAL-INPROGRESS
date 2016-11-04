@@ -9,23 +9,23 @@
 import UIKit
 
 class HueTableViewController: UITableViewController {
-    
-    var colorImageController = ProfileViewController()
-    var hueCell = HueTableViewCell()
-    
 
+    var image: UIImageView?
+    var colorImageController = ProfileViewController()
+    
     
     var hues: [Hue] = [
-    
-    Hue(name: "Toffee", female: #imageLiteral(resourceName: "PaulaPatton"), description: "Sweet like everyone's favorite treat. Add some sugar to your collection with products for your hue!", actresses: "Paula Patton, Jurnee Smollet-Bell, Rochelle Aytes", hue: #imageLiteral(resourceName: "Toffee")),
-    Hue(name: "Caramel", female: #imageLiteral(resourceName: "Beyonce"), description: "Caramel goes with everything, just like your skin. Search for those special products to give you that special glow!", actresses: "Beyonce, Zoe Saladana, Halle Berry", hue: #imageLiteral(resourceName: "Caramel")),
-    Hue(name: "Cinnamon", female: #imageLiteral(resourceName: "Eva"), description: "The perfect spice of glimmer compliments your incredible hue. Find that \"must have\" item for your collection", actresses: "Eva Pigford, Sanaa Lathan, Taraji P Henson", hue: #imageLiteral(resourceName: "Cinnamon") ),
-    Hue(name: "Mocha", female: #imageLiteral(resourceName: "Gabby"), description: "You're a nice coffee on an early winter eve. Warm up your life with the best products for your hue!", actresses: "Gabrielle Union, Michelle Obama, Regina Hall", hue: #imageLiteral(resourceName: "Mocha")),
-    Hue(name: "Cocoa", female: #imageLiteral(resourceName: "Tika Sumpter"), description: "Everybody loves chocolate, and your hue is a universal craving. We've got the perfect palette to bring out your shine - click away!", actresses: "Tika Sumpter, Viola Davis, Lupita N'yongo", hue: #imageLiteral(resourceName: "Cocoa"))
+        
+        Hue(name: "Toffee", female: #imageLiteral(resourceName: "PaulaPatton"), description: "Sweet like everyone's favorite treat. Add some sugar to your collection with products for your hue!", actresses: "Paula Patton, Jurnee Smollet-Bell, Rochelle Aytes", hue: #imageLiteral(resourceName: "Toffee")),
+        Hue(name: "Caramel", female: #imageLiteral(resourceName: "Beyonce"), description: "Caramel goes with everything, just like your skin. Search for those special products to give you that special glow!", actresses: "Beyonce, Zoe Saladana, Halle Berry", hue: #imageLiteral(resourceName: "Caramel")),
+        Hue(name: "Cinnamon", female: #imageLiteral(resourceName: "Eva"), description: "The perfect spice of glimmer compliments your incredible hue. Find that \"must have\" item for your collection", actresses: "Eva Pigford, Sanaa Lathan, Taraji P Henson", hue: #imageLiteral(resourceName: "Cinnamon") ),
+        Hue(name: "Mocha", female: #imageLiteral(resourceName: "Gabby"), description: "You're a nice coffee on an early winter eve. Warm up your life with the best products for your hue!", actresses: "Gabrielle Union, Michelle Obama, Regina Hall", hue: #imageLiteral(resourceName: "Mocha")),
+        Hue(name: "Cocoa", female: #imageLiteral(resourceName: "Tika Sumpter"), description: "Everybody loves chocolate, and your hue is a universal craving. We've got the perfect palette to bring out your shine - click away!", actresses: "Tika Sumpter, Viola Davis, Lupita N'yongo", hue: #imageLiteral(resourceName: "Cocoa"))
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         self.navigationController?.isNavigationBarHidden = false
     }
@@ -33,17 +33,17 @@ class HueTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
-        
     
     
-
+    
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return hues.count
+        return hues.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,6 +60,11 @@ class HueTableViewController: UITableViewController {
         return cell
     }
     
+    func color() {
+        
+         ProfileViewController().view.backgroundColor = UIColor.black
+        
+    }
     
     @IBAction func hueButtonClicked(_ sender: UIButton) {
         
@@ -69,13 +74,7 @@ class HueTableViewController: UITableViewController {
         }
         let ProceedAction = UIAlertAction(title: "Yes, add my hue", style: UIAlertActionStyle.default) { (result: UIAlertAction) -> Void in
             print("added")
-            
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                
-                self.colorImageController.profileBackgroundImage.image = self.hues[indexPath.row].hue
-            }
-            //eventually this is where i'll append the profile image 
-            
+
             
         }
         alertController.addAction(CancelAction)
@@ -85,40 +84,40 @@ class HueTableViewController: UITableViewController {
         
     }
     
-  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "tagged" {
-            
-            if let indexPath = collectionView?.indexPath(for: sender as! DetailCollectionViewCell) {
-                
-                guard let destinationVC = segue.destination as? MakeUpTableViewController
-                    else { return }
-                
-                switch indexPath.row {
-                case 0:
-                    destinationVC.products = lips
-                    
-                case 1:
-                    destinationVC.products = eyes
-                    
-                case 2:
-                    destinationVC.products = face
-                    
-                case 3:
-                    destinationVC.products = cheeks
-                    
-                case 4:
-                    destinationVC.products = tools
-                    
-                case 5:
-                    
-                    destinationVC.products = nude
-                default:
-                    break
-                }
-                
-            }
-        } */
+    /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     if segue.identifier == "tagged" {
+     
+     if let indexPath = collectionView?.indexPath(for: sender as! DetailCollectionViewCell) {
+     
+     guard let destinationVC = segue.destination as? MakeUpTableViewController
+     else { return }
+     
+     switch indexPath.row {
+     case 0:
+     destinationVC.products = lips
+     
+     case 1:
+     destinationVC.products = eyes
+     
+     case 2:
+     destinationVC.products = face
+     
+     case 3:
+     destinationVC.products = cheeks
+     
+     case 4:
+     destinationVC.products = tools
+     
+     case 5:
+     
+     destinationVC.products = nude
+     default:
+     break
+     }
+     
+     }
+     } */
     
-
+    
     
 }

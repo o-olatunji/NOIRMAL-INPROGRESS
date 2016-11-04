@@ -71,7 +71,7 @@ class TutorialsCollectionViewController: UICollectionViewController {
         let video = videos[indexPath.row]
         
         cell.videoTitle.text = video.title
-        cell.videoView.allowsInlineMediaPlayback = true
+        //cell.videoView.allowsInlineMediaPlayback = true
         cell.videoView.loadHTMLString("<iframe width=\"199\" height=\"161\" src=\"\(video.video)?&playsinline=1\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
     
         return cell
